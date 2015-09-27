@@ -45,5 +45,4 @@ casted_data$Activity <- b$V2
 Final_tidy_data <- casted_data
 colnames(Final_tidy_data) = c("Subject", "Activity", as.character(mean_col_names), as.character(std_col_names))
 
-
-write.table(Final_tidy_data, file = "Tidy_data_set.txt", row.name = F)
+write.table(Final_tidy_data, file = "Tidy_data_set.txt", row.name = F, sep ="\t")
